@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de elementos</title>
+    <script src="codigo.js"></script>
+    <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body>
+    <div>
+        <label for="input">Número: </label><input type="text" id="input" name="amount"/>
+        <label for="options">Tipo</label>
+        <select id="options" name="type" onChange="combo(this, 'input')">
+            <option>option 1</option>
+            <option>option 2</option>
+            <option>option 3</option>
+            <option> option 4 </option>
+            <option> option 5 </option>
+        </select>
+        <button>Insertar</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <td>Tipo</td>
+                <td>Cantidad</td>
+            </tr>
+        </thead>
+        <tbody id="items">
+            <tr>
+
+            </tr>
+        </tbody>
+    </table>
+    Total de elementos: <span id="total"></span>
+</body>
+</html>
